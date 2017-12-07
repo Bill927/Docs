@@ -27,10 +27,8 @@ uid: spa/index
 Run the following command to install the **preview** release of the ASP.NET Core templates for Angular, React, and React with Redux:
 
 ```console
-dotnet new --install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.1-preview1
+dotnet new --install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0-preview1-final
 ```
-
-**TODO** Update the line above to reflect the final preview1 package name before publishing these docs.
 
 ## Use the templates
 
