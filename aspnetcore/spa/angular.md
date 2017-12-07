@@ -140,9 +140,9 @@ At the end of the `apps` array in *ClientApp/.angular-cli.json*, define an extra
 
 This new SSR-enabled app configuration requires two further files: *tsconfig.server.json* and *main.server.ts*. The *tsconfig.server.json* file specifies TypeScript compilation options. The *main.server.ts* file serves as the code entry point during SSR.
 
-Add a new file called *tsconfig.server.json* inside *ClientApp* (alongside the existing *tsconfig.json*), containing the following:
+Add a new file called *tsconfig.server.json* inside *ClientApp/src* (alongside the existing *tsconfig.app.json*), containing the following:
 
-[!code-json[](sample/AngularServerSideRendering/ClientApp/tsconfig.server.json)]
+[!code-json[](sample/AngularServerSideRendering/ClientApp/src/tsconfig.server.json)]
 
 This file configures Angular's AoT compiler to look for a module called `app.server.module`. Add this by creating a new file at *ClientApp/src/app/app.server.module.ts* (alongside the existing *app.module.ts*) containing the following: 
 

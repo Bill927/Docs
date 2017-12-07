@@ -29,7 +29,7 @@
         "assets"
       ],
       "main": "main.server.ts",
-      "tsconfig": "../tsconfig.server.json",
+      "tsconfig": "tsconfig.server.json",
       "prefix": "app",
       "scripts": [],
       "environmentSource": "environments/environment.ts",

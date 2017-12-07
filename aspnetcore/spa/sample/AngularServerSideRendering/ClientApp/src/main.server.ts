@@ -6,11 +6,12 @@ import { enableProdMode } from '@angular/core';
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 import { createServerRenderer } from 'aspnet-prerendering';
 export { AppServerModule } from './app/app.server.module';
-const { AppServerModule, AppServerModuleNgFactory, LAZY_MODULE_MAP } = (module as any).exports;
 
 enableProdMode();
 
 export default createServerRenderer(params => {
+  const { AppServerModule, AppServerModuleNgFactory, LAZY_MODULE_MAP } = (module as any).exports;
+ 
   const options = {
     document: params.data.originalHtml,
     url: params.url,
